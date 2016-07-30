@@ -1,0 +1,34 @@
+{
+  "name": "react-native-simple-checkbox",
+  "version": "1.0.0",
+  "description": "A simple circle checkbox component for React Native using FontAwesome icons.",
+  "main": "SimpleCheckBox.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkurapov/react-native-simple-checkbox.git"
+  },
+  "keywords": [
+    "react-native",
+    "checkbox",
+    "component",
+    "circle",
+    "simple",
+    "react-component",
+    "icon",
+    "fontawesome",
+    "ios",
+    "android",
+    "es6"
+  ],
+  "dependencies": {
+    "react": "15.2.1",
+    "react-native": "0.29.1",
+    "react-native-vector-icons": "^2.0.3"
+  },
+  "author": "Max Kurapov <mkurapov.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkurapov/react-native-simple-checkbox/issues"
+  },
+  "homepage": "https://github.com/mkurapov/react-native-simple-checkbox"
+}
