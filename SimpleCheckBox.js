@@ -43,7 +43,7 @@ class SimpleCheckBox extends Component {
     }
 }
 
-CCheckBox.propTypes = {
+SimpleCheckBox.propTypes = {
     buttonSize: React.PropTypes.number.isRequired,
     buttonColor:React.PropTypes.string.isRequired,
     iconSize: React.PropTypes.number.isRequired,
@@ -54,7 +54,7 @@ CCheckBox.propTypes = {
     onToggle: React.PropTypes.func.isRequired,
 }
 
-CCheckBox.defaultProps = {
+SimpleCheckBox.defaultProps = {
     buttonSize: 25,
     buttonColor:'lightgrey',
     iconSize: 15,

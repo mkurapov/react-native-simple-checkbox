@@ -1,6 +1,6 @@
 {
   "name": "react-native-simple-checkbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple circle checkbox component for React Native using FontAwesome icons.",
   "main": "SimpleCheckBox.js",
   "repository": {
