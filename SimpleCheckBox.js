@@ -33,7 +33,7 @@ class SimpleCheckBox extends Component {
 
         const size = this.props.buttonSize;
         return (
-            <TouchableOpacity activeOpacity={0.5} style={[styles.buttonContainer,{width:size,height:size, borderRadius:size/2, backgroundColor: this.props.buttonColor, opacity: (this.state.disabled ? 0.5 : 1)}]} onPress={() => !this.state.disabled ? this.checkPressed() : null}>
+            <TouchableOpacity activeOpacity={0.5} style={[styles.buttonContainer,{width:size,height:size, borderRadius:size/2, backgroundColor: this.props.buttonColor, borderWidth: this.props.buttonBorderWidth, borderColor: this.props.buttonBorderColor, opacity: (this.state.disabled ? 0.5 : 1)}]} onPress={() => !this.state.disabled ? this.checkPressed() : null}>
                 <View>
                     {this.renderCheckState()}
                 </View>
@@ -46,6 +46,8 @@ class SimpleCheckBox extends Component {
 SimpleCheckBox.propTypes = {
     buttonSize: React.PropTypes.number.isRequired,
     buttonColor:React.PropTypes.string.isRequired,
+    buttonBorderWidth: React.PropTypes.number.isRequired,
+    buttonBorderColor:React.PropTypes.string.isRequired,
     iconSize: React.PropTypes.number.isRequired,
     iconColor:React.PropTypes.string.isRequired,
     iconImage:React.PropTypes.string.isRequired,
@@ -57,6 +59,8 @@ SimpleCheckBox.propTypes = {
 SimpleCheckBox.defaultProps = {
     buttonSize: 25,
     buttonColor:'lightgrey',
+    buttonBorderWidth:0,
+    buttonBorderColor:'transparent',
     iconSize: 15,
     iconColor:'green',
     iconImage:'check',
